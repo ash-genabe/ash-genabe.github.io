@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ashley Genabe_Unessay Project",
-    "currentPage": "Home.html",
+    "currentPage": "page3.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -77,7 +77,7 @@
     "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": true,
-    "uniqCompNum": 149,
+    "uniqCompNum": 160,
     "versionPublish": "5.3.0",
     "screenshot": "screenshot.png"
   },
@@ -730,6 +730,33 @@
           "_params": {}
         },
         {
+          "alias": "soundcloud",
+          "_isSecondary": true,
+          "typeCompatible": "!isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "iframe": {
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".container-fluid": {
+              "padding": "0"
+            }
+          },
+          "_name": "soundcloud2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\">\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\">\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\" checked=\"\">\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"372742355\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">Listen to music while viewing/studying!</h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true\" frameborder=\"0\" allowfullscreen=\"\"></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
+          "_anchor": "soundcloud2-46",
+          "_isUserblock": true,
+          "_cid": "sA5f2S85On",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "& when not (@fullScreen)": {
@@ -1163,11 +1190,11 @@
           "_sourceTheme": "mobirise5",
           "_customHTML": "<section class=\"video3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"5\" step=\"1\" condition=\"fullWidth==false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://vimeo.com/428046504\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h4 class=\"mbr-section-title mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                <b>View in Action</b></h4>\n            <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0 mt-2\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Click on the video in this block to set the link to\n                your own video.</h5>\n        </div>\n        <div class=\"row mt-4\">\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://www.youtube.com/watch?v=BpnlS_ach-0&loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\"><b>\n                    Primates: What is a Primate? </b>by Odyssey Earth</p>\n            </div>\n            <div class=\"col-12 col-md-6 video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://www.youtube.com/watch?v=kTjn9JSJV5E&loop=0&autoplay=0\"></iframe>\n                </div>\n                <p class=\"mbr-text pt-2 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-text\"><b>Primate Classification</b> by&nbsp;Kristin Liv Rauch</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sA1Ma4ag3N",
+          "_anchor": "video3-44",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "video3-44"
+          "_params": {}
         },
         {
           "alias": false,
@@ -1291,33 +1318,6 @@
           "_params": {}
         },
         {
-          "alias": "soundcloud",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "iframe": {
-              "margin-left": "auto",
-              "margin-right": "auto"
-            },
-            ".container-fluid": {
-              "padding": "0"
-            }
-          },
-          "_name": "soundcloud2",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\">\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\">\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\" checked=\"\">\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"372742355\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">\n            SoundСloud\n        </h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true\" frameborder=\"0\" allowfullscreen=\"\"></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
-          "_anchor": "soundcloud2-3v",
-          "_isUserblock": true,
-          "_cid": "sA1oqpqByk",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -1362,6 +1362,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": true,
+            "postsNumber": 5,
+            "socialDisqus": false,
+            "shortName": "",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-47"
         },
         {
           "alias": false,
@@ -1901,6 +1927,33 @@
           "_params": {}
         },
         {
+          "alias": "soundcloud",
+          "_isSecondary": true,
+          "typeCompatible": "!isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "iframe": {
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".container-fluid": {
+              "padding": "0"
+            }
+          },
+          "_name": "soundcloud2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\">\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\" checked>\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"372742355\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">Listen to music while viewing/studying!</h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\" frameborder=\"0\" allowfullscreen></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
+          "_anchor": "soundcloud2-45",
+          "_isUserblock": true,
+          "_cid": "sA5efNoMLg",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "& when not (@fullScreen)": {
@@ -2095,32 +2148,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": "soundcloud",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "iframe": {
-              "margin-left": "auto",
-              "margin-right": "auto"
-            },
-            ".container-fluid": {
-              "padding": "0"
-            }
-          },
-          "_name": "soundcloud2",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"4\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\">\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\" checked>\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"372742355\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">\n            SoundСloud\n        </h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\" frameborder=\"0\" allowfullscreen></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
-          "_cid": "sA1igTXrLJ",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "soundcloud2-3s"
         },
         {
           "alias": false,
@@ -2692,6 +2719,33 @@
       },
       "components": [
         {
+          "alias": "soundcloud",
+          "_isSecondary": true,
+          "typeCompatible": "!isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "iframe": {
+              "margin-left": "auto",
+              "margin-right": "auto"
+            },
+            ".container-fluid": {
+              "padding": "0"
+            }
+          },
+          "_name": "soundcloud2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\" checked>\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\">\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"551801490\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">Listen to my favorite song!<b><br>'Promise' (약속)</b></h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\" frameborder=\"0\" allowfullscreen></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
+          "_anchor": "soundcloud2-49",
+          "_isUserblock": true,
+          "_cid": "sA5fU4Y2qe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "& when not (@fullScreen)": {
@@ -2807,52 +2861,34 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-section-subtitle": {
-              "text-align": "center"
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            ".mbr-text": {
-              "text-align": "center"
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-title": {
+              "color": "#65c6d4",
+              "text-align": "right"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#111111",
+              "text-align": "right"
             }
           },
-          "_name": "content5",
+          "_name": "header7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\">ANTHROpa and Sir Kevin!</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">I would like to express my sincerest gratitude to these amazing people that made my second semester (A.Y. 2020-2021) journey fun and bearable! I wish you all the best! (๑˃ᴗ˂)ﻭ<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "sA1rNqPQkX",
+          "_customHTML": "<section class=\"header7\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"7\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\" selected>Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/anthropa-1366x768.png\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"text-right\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>ANTHROpa and Sir Kevin!</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    I would like to express my sincerest gratitude to these amazing people that made my second semester (A.Y. 2020-2021) journey fun and bearable! <br>I wish you all the best! (๑˃ᴗ˂)ﻭ</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Create Website</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sA5jj1Cx7y",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "content5-43"
-        },
-        {
-          "alias": "soundcloud",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            "iframe": {
-              "margin-left": "auto",
-              "margin-right": "auto"
-            },
-            ".container-fluid": {
-              "padding": "0"
-            }
-          },
-          "_name": "soundcloud2",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section soundcloud2\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"soundcloud-plugin\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline name=\"scWidth\" title=\"Player Width\" min=\"4\" max=\"12\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n\n        <input type=\"radio\" title=\"Track\" name=\"itemType\" value=\"tracks\" checked>\n        <input type=\"radio\" title=\"Playlist\" name=\"itemType\" value=\"playlists\">\n        <input type=\"text\" title=\"ID\" name=\"itemId\" value=\"551801490\">\n\n        <input type=\"color\" title=\"Bg Color\" name=\"bgColor\" value=\"#98dee8\">\n    </mbr-parameters>\n\n    <div class=\"mbr-section__container\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-fonts-style mbr-section-title align-center sc__title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".sc__title\">'Promise' (약속) By JIMIN Of BTS</h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-{{scWidth}}\">\n                <figure class=\"mobirise-loader mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom\">\n                    <iframe class=\"mbr-embedded-video\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/{{itemType}}/{{itemId}}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\" frameborder=\"0\" allowfullscreen></iframe>\n                </figure>\n            </div>\n        </div>\n    </div>\n    <div class=\"clearfix\"></div>\n</section>",
-          "_anchor": "soundcloud2-3w",
-          "_isUserblock": true,
-          "_cid": "sA1oTntzF2",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_anchor": "header7-4f"
         },
         {
           "alias": false,
@@ -2899,6 +2935,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": true,
+            "postsNumber": 5,
+            "socialDisqus": false,
+            "shortName": "",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-48"
         },
         {
           "alias": false,
